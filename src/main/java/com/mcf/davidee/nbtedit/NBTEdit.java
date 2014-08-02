@@ -32,6 +32,8 @@ import cpw.mods.fml.common.event.FMLServerStartingEvent;
 /*
  * The NBTEdit Mod class - woo singletons. Sorry if you're reading through this mod, its formatting is very
  * odd and the code very messy. Hopefully someday this can be ported to GuiLib to provide much more flexibility.
+ * 
+ * TODO: Beg for the old clientSideRequired and serverSideRequired flags. Accepting all remote versions is stupid.
  */
 @Mod(modid="NBTEdit", name = "In-game NBTEdit",  version = "1.7.2.2", acceptableRemoteVersions="*")
 public class NBTEdit {
