@@ -6,6 +6,7 @@ import io.netty.buffer.ByteBufInputStream;
 import io.netty.buffer.ByteBufOutputStream;
 import io.netty.channel.ChannelHandlerContext;
 
+import java.io.DataInputStream;
 import java.io.IOException;
 import java.util.logging.Level;
 
@@ -45,10 +46,11 @@ public class TileNBTPacket extends AbstractPacket {
 	@Override
 	public void decodeInto(ChannelHandlerContext ctx, ByteBuf buffer) throws IOException {
 		ByteBufInputStream bis = new ByteBufInputStream(buffer);
+		DataInputStream nbt = new DataInputStream(bis);
 		x = bis.readInt();
 		y = bis.readInt();
 		z = bis.readInt();
-		tag = NBTHelper.nbtRead(bis);
+		tag = NBTHelper.nbtRead(nbt);
 	}
 
 	@Override

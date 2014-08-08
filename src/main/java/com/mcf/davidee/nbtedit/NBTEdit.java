@@ -35,7 +35,7 @@ import cpw.mods.fml.common.event.FMLServerStartingEvent;
  * 
  * TODO: Beg for the old clientSideRequired and serverSideRequired flags. Accepting all remote versions is stupid.
  */
-@Mod(modid="NBTEdit", name = "In-game NBTEdit",  version = "1.7.2.2", acceptableRemoteVersions="*")
+@Mod(modid="NBTEdit", name = "In-game NBTEdit",  version = "1.7.10", acceptableRemoteVersions="*")
 public class NBTEdit {
 	
 	private static final String SEP = System.getProperty("line.separator");
