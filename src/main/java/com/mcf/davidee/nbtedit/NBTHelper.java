@@ -1,6 +1,8 @@
 package com.mcf.davidee.nbtedit;
 
 import java.io.DataInput;
+import java.io.DataInputStream;
+import java.io.InputStream;
 import java.io.DataOutput;
 import java.io.IOException;
 import java.util.List;
@@ -14,7 +16,7 @@ import cpw.mods.fml.relauncher.ReflectionHelper;
 
 public class NBTHelper {
 	
-	public static NBTTagCompound nbtRead(DataInput in) throws IOException {
+	public static NBTTagCompound nbtRead(DataInputStream in) throws IOException {
 		return CompressedStreamTools.read(in);
 	}
 	

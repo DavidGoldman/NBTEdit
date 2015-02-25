@@ -1,0 +1,14 @@
+[{
+  "modid": "${mod_id}",
+  "name": "ForgeNBTEdit",
+  "version": "${mod_version}",
+  "mcversion": "${mc_version}",
+  
+  "credits": "",
+  "authorList": [ "DavidG" ],
+  "description": "Ingame NBT Editing",
+  "logoFile": "",
+  
+  "parent": "",
+  "screenshots": [ ]
+}]
